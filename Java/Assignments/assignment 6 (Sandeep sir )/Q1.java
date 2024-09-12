@@ -1,3 +1,7 @@
+/*1.	Declare a single-dimensional array of 5 integers inside the main method. 
+Traverse the array to print the default values. 
+Then accept records from the user and print the updated values of the array.*/
+
 import java.util.Scanner;
 
 public class Q1 {
