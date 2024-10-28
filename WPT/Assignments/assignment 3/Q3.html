@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Dropdown Items</title>
+    <style>
+        
+        select, button {
+            padding: 10px;
+            margin: 10px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #FF5733;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #C70039;
+        }
+    </style>
+</head>
+<body>
+
+   
+ 
+
+
+    <select id="myDropdown">
+        <option value="">Apple</option>
+        <option value="">Banana</option>
+        <option value=""> Mango</option>
+        <option value="">watermelon</option>
+        <option value="">pineapple</option>
+
+        
+       
+    </select>
+
+ 
+    <button onclick="removeItem()">Remove Selected Item</button>
+
+    <script>
+        
+        function removeItem() {
+            var dropdown = document.getElementById("myDropdown");
+            dropdown.remove(dropdown.selectedIndex);  
+        }
+    </script>
+
+</body>
+</html>

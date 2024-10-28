@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paragraph Style Manipulation</title>
+    <style>
+      
+        p {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: black;
+        }
+
+     
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+   
+   
+    <p id="myParagraph">
+        It is rightly said that being disciplined is essential in life. When a person leads a disciplined life, they set an easy path to success. They will develop an approach to happiness and a beautiful future ahead. Being disciplined is the practice of having a scheduled daily routine which helps an individual to be punctual and hard-working. An individual is taught what being disciplined means from the time they are young. Even though discipline takes a lot of effort, the advantages of a disciplined life make it a worthwhile endeavour.
+    </p>
+
+ 
+    <button onclick="changeStyle()">Click here </button>
+
+    <script>
+       
+        function changeStyle() {
+           
+            var paragraph = document.getElementById("myParagraph");
+           
+            paragraph.style.fontFamily = "Courier New, Courier, monospace";
+  
+            paragraph.style.fontSize = "20px";
+
+          
+        }
+    </script>
+
+</body>
+</html>

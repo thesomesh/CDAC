@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission</title>
+    <style>
+      
+       
+        input {
+            margin: 5px 0;
+            padding: 8px;
+            width: 250px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+  
+        #result {
+            margin-top: 20px;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>User Information Form</h1>
+
+
+    <form id="userForm">
+        <label for="firstName">First Name:</label><br>
+        <input type="text" id="firstName" name="firstName" required><br>
+
+        <label for="lastName">Last Name:</label><br>
+        <input type="text" id="lastName" name="lastName" required><br>
+
+        <label for="contact">Contact No:</label><br>
+        <input type="tel" id="contact" name="contact" required><br>
+
+        <label for="email">Email ID:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+
+
+    <div id="result"></div>
+
+    <script>
+        
+        function submitForm() {
+           
+            var firstName = document.getElementById("firstName").value;
+            var lastName = document.getElementById("lastName").value;
+            var contact = document.getElementById("contact").value;
+            var email = document.getElementById("email").value;
+
+           
+            var resultDiv = document.getElementById("result");
+            resultDiv.innerHTML = `
+                <h3>Submitted Information</h3>
+                <p><strong>First Name:</strong> ${firstName}</p>
+                <p><strong>Last Name:</strong> ${lastName}</p>
+                <p><strong>Contact No:</strong> ${contact}</p>
+                <p><strong>Email ID:</strong> ${email}</p>
+            `;
+        }
+    </script>
+
+</body>
+</html>
