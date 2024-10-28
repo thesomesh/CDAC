@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.auth-container {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.auth-box {
+    width: 50%;
+    padding: 40px;
+    text-align: center;
+}
+
+.sign-in {
+    background-color: #f7f7f7;
+}
+
+.sign-up {
+    background-color: #eaeaea;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    text-align: left;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #111;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .auth-container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .auth-box {
+        width: 100%;
+    }
+}
