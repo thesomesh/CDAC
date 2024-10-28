@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Watch Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="Shop Logo.png" width="40%">
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="sign.html">Login</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    </nav>
+
+    <section id="home" class="home-section">
+        <h1>Welcome to Digital Watch Store</h1>
+        <p>Your one-stop shop for the latest digital watches.</p>
+        <button class="btn hover-effect">Shop Now</button>
+    </section>
+
+    <section id="w" class="w">
+        <img src="m.png" width="99.5%">
+    </section>
+
+    <section id="watches" class="watches-section">
+        <h2>Our Watches</h2>
+        <div class="watches-grid">
+            <div class="watch-item">
+                <img src="1.png" alt="Watch 1" width="100%">
+                <button class="btn">Add to Cart</button>
+            </div>
+            <div class="watch-item">
+                <img src="2.png" alt="Watch 1" width="100%">
+                <button class="btn">Add to Cart</button>
+            </div>
+            <div class="watch-item">
+                <img src="3.png" alt="Watch 3" width="100%">
+                <button class="btn">Add to Cart</button>
+            </div>
+            <div class="watch-item">
+                <img src="4.png" alt="Watch 4" width="100%">
+                <button class="btn">Add to Cart</button>
+            </div>
+            <div class="watch-item">
+                <img src="5.png" alt="Watch 5" width="100%">
+                <button class="btn">Add to Cart</button>
+            </div>
+            <div class="watch-item">
+                <img src="6.png" alt="Watch 6" width="100%">
+                <button class="btn">Add to Cart</button>
+            </div>
+            <div class="watch-item">
+                <img src="7.png" alt="Watch 7" width="100%">
+                <button class="btn">Add to Cart</button>
+            </div>
+            <div class="watch-item">
+                <img src="8.png" alt="Watch 8" width="100%">
+                <button class="btn">Add to Cart</button>
+            </div>
+            <div class="watch-item">
+                <img src="9.png" alt="Watch 9" width="100%">
+                <button class="btn">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>We offer a wide variety of watches to match your style and needs.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Digital Watch Store | Contact us: contact@watchstore.com</p>
+        <div class="social-media">
+            <a href="#">Facebook</a> | 
+            <a href="#">Instagram</a> | 
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var navLinks = document.getElementById("navLinks");
+            navLinks.classList.toggle("show");
+        }
+    </script>
+
+</body>
+</html>
