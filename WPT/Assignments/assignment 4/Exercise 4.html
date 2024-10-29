@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback Function </title>
+</head>
+<body>
+   <script>
+function fetchData(url, callback) {
+    document.writeln(`Fetching data from ${url}...`);
+    setTimeout(() => {
+        const isError = Math.random() > 0.5; 
+        if (isError) {
+            callback("Error: Failed to fetch data");
+        } else {
+            const response = "Data received from " + url;
+            callback(null, response);
+        }
+    }, 5000); 
+}
+
+fetchData("https://api.openai.com/data", (error, response) => {
+    if (error) {
+        document.writeln(error);
+    } else {
+        document.writeln(response);
+    }
+});
+
+
+
+
+   </script> 
+</body>
+</html>

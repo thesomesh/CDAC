@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Callback Function </title>
+</head>
+<body>
+    <p> Please Check Output on Console </p>
+
+    <script>
+
+function fetchData(url, callback) {
+    setTimeout(() => {
+        const response = `Response from ${url}`;
+        callback(response);
+    }, 5000); 
+}
+
+const url = "https://api.openai.com/data";
+
+fetchData(url, function(response) {
+    console.log(response);
+});
+
+
+
+    </script>
+    
+</body>
+</html>

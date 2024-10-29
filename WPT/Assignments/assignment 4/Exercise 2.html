@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Callback Function</title>
+</head>
+<body>
+    <p> Please Check Output on Console </p>
+  <script>
+     function forEachElement(array, callback) {
+    for (let i = 0; i < array.length; i++) {
+        callback(array[i], i); 
+    }
+}
+
+
+const num = [1, 2, 3, 4, 5];
+
+
+forEachElement(num, function(element, index) {
+    const result = element * 2; 
+    console.log(`Index: ${index}, Value: ${result}`); 
+});
+
+  </script> 
+</body>
+</html>
