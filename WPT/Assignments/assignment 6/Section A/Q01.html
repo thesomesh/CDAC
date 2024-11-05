@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      
+const TAX_RATE = 0.18; 
+
+
+var cart = [];
+
+
+function addItemToCart(itemName, itemPrice, quantity) {
+    let item = {
+        name: itemName,
+        price: itemPrice,
+        quantity: quantity
+    };
+    cart.push(item);
+    console.log(`${quantity} of ${itemName} added to cart.`);
+}
+
+
+function calculateTotal() {
+    let total = 0;
+    for (let i = 0; i < cart.length; i++) {
+        total += cart[i].price * cart[i].quantity;
+    }
+    total += total * TAX_RATE;
+    return total.toFixed(2); 
+}
+
+
+function displayCart() {
+    console.log("Shopping Cart:");
+    cart.forEach(item => {
+        console.log(`${item.quantity} x ${item.name} @ rs${item.price.toFixed(2)} each`);
+    });
+    console.log(`Total (including tax): rs  ${calculateTotal()}`);
+}
+
+
+addItemToCart("Apple", 100, 3);
+addItemToCart("Banana", 50, 5);
+addItemToCart("Orange", 175, 2);
+displayCart();
+
+
+    </script>
+</body> 
+</html>

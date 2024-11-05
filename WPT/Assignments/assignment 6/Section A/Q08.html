@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         
+const shoppingCart = [
+    { item: "Shirt", price: 220 },
+    { item: "Pants", price: 440 },
+    { item: "Shoes", price: 560 },
+    { item: "Hat", price: 155 }
+];
+
+const totalPrice = shoppingCart.reduce((total, currentItem) => total + currentItem.price, 0);
+
+console.log("Total Price:", totalPrice);
+
+
+
+    </script>
+</body>
+</html>
+
+
+
+

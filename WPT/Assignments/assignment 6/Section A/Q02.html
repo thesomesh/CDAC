@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calculateArea(length, breadth){
+            return length * breadth;
+        }
+        const arrow = (length, breadth) => length * breadth;
+
+        let length = 15;
+        let breadth = 18;
+    
+        console.log("Area using Regular function: ", calculateArea(length, breadth));
+        console.log("Area using arrow function:", arrow(length, breadth));
+
+    </script>
+</body> 
+</html>
